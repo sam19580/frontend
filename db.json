@@ -1,0 +1,96 @@
+{
+    "companies": [
+      {
+        "id": 1,
+        "company_name": "Company A",
+        "accounts": [
+          {
+            "id": 1,
+            "account_number": "ACCT_A1",
+            "transactions": [
+              {
+                "id": 1,
+                "transaction_number": "TXN001",
+                "amount": 100.00,
+                "credit": 100.00,
+                "datetime": "2024-07-17T10:30:00Z"
+              },
+              {
+                "id": 2,
+                "transaction_number": "TXN002",
+                "amount": 50.50,
+                "credit": -50.50,
+                "datetime": "2024-07-16T15:45:00Z"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "account_number": "ACCT_A2",
+            "transactions": [
+              {
+                "id": 3,
+                "transaction_number": "TXN003",
+                "amount": 75.25,
+                "credit": 75.25,
+                "datetime": "2024-07-15T08:00:00Z"
+              },
+              {
+                "id": 4,
+                "transaction_number": "TXN004",
+                "amount": 200.00,
+                "credit": -200.00,
+                "datetime": "2024-07-14T11:20:00Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "company_name": "Company B",
+        "accounts": [
+          {
+            "id": 3,
+            "account_number": "ACCT_B1",
+            "transactions": [
+              {
+                "id": 5,
+                "transaction_number": "TXN005",
+                "amount": 300.75,
+                "credit": 300.75,
+                "datetime": "2024-07-13T09:45:00Z"
+              },
+              {
+                "id": 6,
+                "transaction_number": "TXN006",
+                "amount": 150.00,
+                "credit": -150.00,
+                "datetime": "2024-07-12T14:00:00Z"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "account_number": "ACCT_B2",
+            "transactions": [
+              {
+                "id": 7,
+                "transaction_number": "TXN007",
+                "amount": 80.20,
+                "credit": 80.20,
+                "datetime": "2024-07-11T16:30:00Z"
+              },
+              {
+                "id": 8,
+                "transaction_number": "TXN008",
+                "amount": 95.50,
+                "credit": -95.50,
+                "datetime": "2024-07-10T18:15:00Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
