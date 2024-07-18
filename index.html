@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">EazyPayouts</div>
+      <ul>
+        <li>Loads</li>
+        <li>Statements</li>
+        <li>Transactions</li>
+      </ul>
+      <button class="logout">Logout</button>
+    </nav>
+    <div class="content">
+      <div class="header">
+        <div class="balance">
+          <h2>Available Balance</h2>
+          <p id="balance">₹ 0</p>
+        </div>
+        <div class="filters">
+          <select id="companySelect">
+            <option value="">Company Name</option>
+          </select>
+          <select id="accountSelect">
+            <option value="">Account Name</option>
+          </select>
+        </div>
+      </div>
+      <div class="transactions">
+        <h3>Latest Loads are displayed here</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Credit</th>
+              <th>A/c Balance</th>
+              <th>UTR/RRN</th>
+              <th>A/c No/UPI</th>
+            </tr>
+          </thead>
+          <tbody id="transactionTable">
+            <!-- Transactions will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
