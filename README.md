@@ -1,19 +1,18 @@
-# Stock Broker Client Web Dashboard - Frontend
+# EazyPayouts - Transaction App
 
-This is the frontend part of the Stock Broker Client Web Dashboard, built with HTML, CSS, and JavaScript. This dashboard allows users to log in, subscribe to stocks, and receive real-time updates on stock prices.
+This is a web-based Transaction App called EazyPayouts. It allows users to view their available balance and the latest transaction loads, filter transactions by company and account, and displays the results in real-time.
 
 ## Features
 
-- **User Login:** Users can log in using their email and password.
-- **Stock Subscription:** Users can subscribe to five supported stocks (`GOOG`, `TSLA`, `AMZN`, `META`, `NVDA`).
-- **Real-time Updates:** The dashboard updates stock prices in real-time without needing to refresh the page.
+- **User Interface:** A clean and responsive interface that displays the available balance, allows filtering by company and account, and shows the latest transactions.
+- **Responsive Design:** Adaptable layout for different screen sizes using media queries.
 
 ## Getting Started
 
 ### Prerequisites
 
 - A web browser
-- A running backend server (check the backend repository for setup instructions)
+- Backend server to provide company and transaction data (not included in this README)
 
 ### Installation
 
@@ -21,39 +20,26 @@ This is the frontend part of the Stock Broker Client Web Dashboard, built with H
 
     ```bash
     git clone <repository_url>
-    cd stock-dashboard/public
+    cd transaction-app
     ```
 
-2. Ensure you have the backend server running. Refer to the backend setup instructions.
-
-3. Open the `index.html` file in your web browser.
+2. Open `index.html` in your web browser.
 
 ### Files
 
 - `index.html`: The main HTML file that structures the web page.
 - `styles.css`: The CSS file that styles the web page.
-- `app.js`: The JavaScript file that handles the frontend logic, including user login, stock subscription, and real-time updates.
+- `script.js`: The JavaScript file that handles fetching data, updating the DOM, and filtering transactions.
 
 ### How to Use
 
 1. Open `index.html` in your web browser.
-2. Enter your email and password, then click "Login".
-3. Once logged in, select a stock from the dropdown and click "Subscribe".
-4. The subscribed stock will appear with its current price.
-5. Stock prices will update in real-time without needing to refresh the page.
+2. The available balance will be displayed.
+3. Use the dropdowns to filter transactions by company and account.
+4. The transactions table will update based on the selected filters.
 
 ### Code Overview
 
 #### index.html
 
-- Contains the structure of the web page, including input fields for login, a dropdown for stock subscription, and a section to display subscribed stocks.
-
-#### styles.css
-
-- Styles the elements on the web page, ensuring a clean and responsive design.
-
-#### app.js
-
-- Handles the user login process, sending credentials to the backend.
-- Manages stock subscription by sending selected stock data to the backend.
-- Listens for real-time stock price updates from the backend and updates the DOM accordingly.
+- Contains the structure of the web page, including navigation, balance display, filters, and transactions table.
